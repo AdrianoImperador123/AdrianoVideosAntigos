@@ -1,0 +1,122 @@
+/* Reset básico para garantir que o layout fique consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px; /* Espaço para o cabeçalho fixo */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #283593;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+header:hover {
+    background-color: #1e88e5;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo principal da página */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 80px; /* Espaço para o cabeçalho fixo */
+}
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.video-item {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 100%;
+    width: 360px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-bottom: 5px solid #283593;
+}
+
+.video-item p {
+    padding: 15px;
+    font-size: 1.1em;
+    color: #555;
+    background: #f0f4f8;
+}
+
+.video-item a {
+    color: #283593;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.video-item a:hover {
+    color: #1e88e5;
+    text-decoration: underline;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #283593;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+footer:hover {
+    background-color: #1e88e5;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
